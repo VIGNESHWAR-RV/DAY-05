@@ -1,0 +1,39 @@
+
+     "SUM OF ALL NUMBERS IN ARRAY USING ANONYMOUS AND IIFE FUNCTION"
+	 
+  //ANONYMOUS FUNCTION
+
+let array = [1,2,3,4,5,6];
+let sum = function(num){
+    let total = 0;
+    for(let i=0;i<num.length;i++){
+    total+=num[i];
+    }return total;
+};
+console.log(sum(array));
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+        21                                                X
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		
+
+     //IIFE FUNCTION
+
+let array = [1,2,3,4,5,6];
+(function(num){
+    let total=0;
+    for(let i=0;i<num.length;i++){
+        total+=num[i];
+    }console.log(total);
+})(array);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+        21                                                X
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		

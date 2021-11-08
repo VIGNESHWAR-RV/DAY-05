@@ -1,0 +1,24 @@
+
+       "PRINTING ODD NUMBERS USING ARROW FUNCTION"
+	   
+ //ARROW FUNCTION
+
+let array = [1,2,3,4,5];
+let oddnums=(nums)=>{
+        let output = [];
+        for(let i=0;i<=+nums.length;i++){
+		if(typeof(+nums[i])==='number' && nums[i]>0){
+            if(nums[i]%2!==0){
+            output.push(nums[i]);
+        }
+    }}return output;
+};
+console.log(oddnums(array));
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+                                            |
+OUTPUT :                                    X
+        [1,3,5]                             |
+                                            X
+                                            |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X

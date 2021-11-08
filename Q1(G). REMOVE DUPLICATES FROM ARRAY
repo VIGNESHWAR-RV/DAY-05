@@ -1,0 +1,36 @@
+
+   "REMOVE DUPLICATES FROM ARRAY"
+   
+ //ANONYMOUS FUNCTION
+
+let array = 'g,g,v,g,e,g,d,d,h,g,h,g,a,g,g,a,g,g'.split(',');
+let arrayWithoutDuplicates = function(array){
+    let array1 = [...new Set(array)];
+    return console.log(array1);
+};
+arrayWithoutDuplicates(array);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+          [ 'g', 'v', 'e', 'd', 'h', 'a' ]                x
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		
+
+     //IIFE FUNCTION
+
+let array = 'g,g,v,g,e,g,d,d,h,g,h,g,a,g,g,a,g,g'.split(',');
+(function(array){
+  let array1 = [...new Set(array)];
+  return console.log(array1);
+})(array1);
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+          [ 'g', 'v', 'e', 'd', 'h', 'a' ]                X
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		

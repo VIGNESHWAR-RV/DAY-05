@@ -1,0 +1,48 @@
+ 
+   "RETURN ALLTHE PALINDROME IN AN ARRAY"
+	 
+  //ANONYMOUS FUNCTION
+
+let array = ["VIKIV","DEEPEED","VENEV","VEDEV","SHEHS","RV"];
+let palindromeCheck = function(array){
+    let output = [];
+  for(let i = 0;i<array.length;i++){
+      let normalOrder = array[i].toLowerCase();
+      let reverseOrder = array[i].toLowerCase().split('').reverse().join('');
+      if(normalOrder===reverseOrder) 
+           output.push(array[i]);
+  }
+  return console.log(output);
+};
+palindromeCheck(array);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+       [ 'VIKIV', 'DEEPEED', 'VENEV', 'VEDEV', 'SHEHS' ]  X
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		
+
+     //IIFE FUNCTION
+
+let array = ["VIKIV","DEEPEED","VENEV","VEDEV","SHEHS","RV"];
+(function(num){
+       let output = [];
+  for(let i = 0;i<array.length;i++){
+      let normalOrder = array[i].toLowerCase();
+      let reverseOrder = array[i].toLowerCase().split('').reverse().join('');
+      if(normalOrder===reverseOrder) 
+           output.push(array[i]);
+  }
+  return console.log(output);
+})(array);
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+       [ 'VIKIV', 'DEEPEED', 'VENEV', 'VEDEV', 'SHEHS' ]  X
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		

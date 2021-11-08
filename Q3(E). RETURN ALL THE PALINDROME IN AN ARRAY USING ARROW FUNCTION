@@ -1,0 +1,26 @@
+
+     "RETURN ALL THE PALINDROME IN AN ARRAY USING ARROW FUNCTION"
+	 
+
+	  //ARROW FUNCTION
+  
+let array = ["VIKIV","DEEPEED","VENEV","VEDEV","SHEHS","RV"];
+let palindromeCheck = (num)=>{
+  let output = [];
+  for(let i = 0;i<array.length;i++){
+      let normalOrder = array[i].toLowerCase();
+      let reverseOrder = array[i].toLowerCase().split('').reverse().join('');
+      if(normalOrder===reverseOrder) 
+           output.push(array[i]);
+  }
+  return console.log(output);
+};
+palindromeCheck(array);
+ 
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+       [ 'VIKIV', 'DEEPEED', 'VENEV', 'VEDEV', 'SHEHS' ]  X
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		

@@ -1,0 +1,23 @@
+
+       "PRINTING ALL STRING IN CAPITAL USING ARROW FUNCTION"
+	   
+ //ARROW FUNCTION
+
+let arr = ['rv','guvi','geek','developer'];
+let capital=(word)=>{
+        let output = [];
+        for(let i=0;i<=+arr.length;i++){
+		if(typeof(word[i])==='string'){
+            output.push(word[i].toUpperCase());
+        }
+    }return output;
+};
+console.log(capital(arr));
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+OUTPUT :                                                  X
+       [ 'RV', 'GUVI', 'GEEK', 'DEVELOPER' ]              |
+                                                          X
+														  |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X

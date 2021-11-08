@@ -1,0 +1,45 @@
+
+        "PRINTING ODD NUMBERS USING ANANYMOUS FUNCTION AND IIFE FUNCTION"
+		
+  //ANONYMOUS FUNCTION
+  
+let array = [1,2,3,4,5];
+let odd = function(num){
+    let output = [];
+    for(let i=0;i<=+num.length;i++){
+	if(typeof(+num[i])==='number' && num[i]>0){
+        if(num[i]%2!==0){
+            output.push(num[i]);
+        }
+    }}return output;
+};
+console.log(odd(array));
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+                                            |
+OUTPUT :                                    X
+        [1,3,5]                             |
+                                            X
+                                            |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+ //IIFE FUNCTION
+
+let array = [1,2,3,4,5];
+(function (number){
+        let output = [];
+        for(let i=0;i<=+number.length;i++){
+		if(typeof(+number[i])==='number' && number[i]>0){
+            if(number[i]%2!==0){
+                output.push(number[i]);
+            }
+        }}console.log(output);
+	})(array);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+                                            |
+OUTPUT :                                    X
+        [1,3,5]                             |
+                                            X
+                                            |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X

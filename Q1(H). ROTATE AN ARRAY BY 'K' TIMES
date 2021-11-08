@@ -1,0 +1,41 @@
+
+   "ROTATE AN ARRAY BY 'K' TIMES"
+   
+ //ANONYMOUS FUNCTION
+
+let array = [1,2,3,4,5,6,7,8,9,10];
+let rotation = function(k,array=array){
+for(let i=1;i<=k;i++){
+    let p = array.pop();
+    array.unshift(p);
+}
+return console.log(array);
+};
+rotation(5);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+          [ 6, 7, 8, 9, 10, 1, 2, 3, 4, 5 ]               x
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		
+
+     //IIFE FUNCTION
+
+let array1= [1,2,3,4,5,6,7,8,9,10];
+(function(k,array=array1){
+    for(let i=1;i<=k;i++){
+     let p = array.pop();
+    array.unshift(p);
+}
+return console.log(array);
+})(7);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+                                                          X
+OUTPUT :                                                  |
+         [ 4, 5, 6, 7, 8, 9, 10, 1, 2, 3 ]                X
+                                                          |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X		

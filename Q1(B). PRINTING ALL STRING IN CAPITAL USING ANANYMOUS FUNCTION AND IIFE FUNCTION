@@ -1,0 +1,48 @@
+
+       "PRINTING ALL STRING IN CAPITAL USING ANANYMOUS FUNCTION AND IIFE FUNCTION"
+	   
+ 
+   //ANONYMOUS FUNCTION
+
+let arr = ['rv','guvi','geek','developer'];
+let caps = function(word){
+    let output = [];
+    for(let i=0;i<word.length;i++){
+    if(typeof(word[i])==='string'){
+        output.push(word[i].toUpperCase());
+    }else{
+        output.push('not a word');
+    }}return output;
+};
+console.log(caps(arr));
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+OUTPUT :                                                  X
+       [ 'RV', 'GUVI', 'GEEK', 'DEVELOPER' ]              |
+                                                          X
+														  |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+
+   //IIFE FUNCTION
+
+let arr = ['rv','guvi','geek','developer'];
+(function(word){
+    let output = [];
+    for(let i=0;i<word.length;i++){
+    if(typeof(word[i])==='string'){
+        output.push(word[i].toUpperCase());
+    }else{
+        output.push('there is not a word');
+    }
+	}console.log(output);
+})(arr);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X	
+                                                          |
+OUTPUT :                                                  X
+       [ 'RV', 'GUVI', 'GEEK', 'DEVELOPER' ]              |
+                                                          X
+														  |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
